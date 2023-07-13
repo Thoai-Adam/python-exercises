@@ -1,0 +1,12 @@
+data = [
+    {"account_number": "111", "first":"Nikki", "last":"Meyer", "balance": "$1,000,000,000,000.00"},
+    {"account_number": "112", "first":"Adam", "last":"Nguyen", "balance": "$1,000,000,000.50"},
+    {"account_number": "113", "first":"John", "last":"Garcia", "balance": "$1,000,000.00"},
+    {"account_number": "114", "first":"Emily", "last":"Wang", "balance": "$500,000.75"},
+    {"account_number": "115", "first":"Sophia", "last":"Lee", "balance": "$2,000,000.25"},
+    {"account_number": "116", "first":"Daniel", "last":"Kim", "balance": "$750,000.00"},
+    {"account_number": "117", "first":"Olivia", "last":"Chen", "balance": "$1,250,000.50"},
+    {"account_number": "118", "first":"Liam", "last":"Gupta", "balance": "$1,800,000.00"},
+    {"account_number": "119", "first":"Ava", "last":"Patel", "balance": "$3,500,000.75"},
+    {"account_number": "120", "first":"Mia", "last":"Sato", "balance": "$900,000.25"}
+]
