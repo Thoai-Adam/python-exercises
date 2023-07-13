@@ -95,6 +95,7 @@ print("Least common favorite fruit:", least_common_fruit)
 
 total_messages = 0
 for profile in result6:
+    #print(profile['greeting'])
     message = profile['greeting'].split(' ')
     for word in message: 
         if word.isdigit():
