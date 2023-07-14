@@ -1,20 +1,27 @@
 import json
 import os
-
+balance = 0
 #define functions to view balance
-def show_balance():
-    balance = 0
-    
+def show_balance(value):
+    print(value)
+
 #function to withdraw
-def withdraw():
+def withdraw(bal):
+    withdraw_amount = int(input("what would you like to withdrawl: "))
+    return bal - withdraw_amount
 
 #function to deposit
-def deposit():
-
-
+def deposit(bal):
+    deposit_amount = int(input("what would you like to deposit: "))
+    return bal + deposit_amount
+    
+your_file = 'checkbook.json'
+def write_balance_to_file(balance):
+    with open (your_file, 'w') as f:
+        json.dump(balance, f)
 
 while True:
-    print("welcome to my first checkbook app")
+    print("Welcome to my first checkbook app")
     print("1.view balance")
     print("2.withdraw")
     print("3.deposit")
@@ -23,23 +30,13 @@ while True:
     option = int(input("please enter your option 1-4."))
     #do things
     if option == 1:
-        show_balance()
+        show_balance(balance)
     elif option == 2:
-        withdraw()
+        balance = withdraw(balance)   #because my function has a return statement 
     elif option == 3:
-        deposit()
+        balance = deposit(balance)
     elif option == 4:
-        exit()
+        write_balance_to_file(balance)
+        break
     else:
-        print("Go away!")
-
-
-
-
-
-
-
-
-
-    with open (your_file, 'w') as f:
-        json.dump(balance, f)
+        continue
